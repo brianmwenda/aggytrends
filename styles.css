@@ -45,8 +45,8 @@ body{
     font-family:helvetica neue,Helvetica,Arial;
     margin:0;
     padding:0;
-    
- 
+
+
 
 }
 header{
@@ -57,32 +57,37 @@ header{
     text-align: center;
     text-transform: uppercase;
     list-style-type:none;
-  
-    
+
+
 }
 .market-header{
     background-color:black;
-    background-image:url("downloaded photos/IMG-20190514-WA0019.jpg");
+    background-image:url("downloaded photos/shoes-2425122__480.jpg");
+    background-repeat: repeat;
     background-size:100%;
-    
+    position:static;
+    background-attachment: fixed;
     background-position:center;
     padding:20px;
     height: 350px;
     text-align: center;
     text-transform: uppercase;
     list-style-type:none;
-  
-    
+    width:100%;
+    top:-1em;
+
+
 }
 .about-header{
     background-color:black;
     background-image:url("downloaded photos/fashion-1536967__480.jpg");
+
     padding:20px;
     height: 300px;
     text-align: center;
     text-transform: uppercase;
     list-style-type:none;
-  
+
 
 }
 /* logo styles*/
@@ -90,10 +95,10 @@ header .logo a{
     background-image: url("logo.png");
     background-position:center;
     background-size:300px;
-    background-repeat:no-repeat;  
+    background-repeat:no-repeat;
     display:inline-block;
     height:300px;
-    
+
     position: relative;
     border-radius: 50%;
     text-indent: -99999999px;
@@ -103,30 +108,57 @@ header .logo a{
 header .mobile{
     display:none;
 }
- 
+
 
 /* navigation styles*/
 nav ul{
     margin:0;
     padding:0;
     list-style-type: none;
-    
-   
+
+
 }
 nav li{
     display:inline-block;
     margin-right:20px;
- 
+
 }
 nav a{
     text-decoration: none;
     color:white;
- 
+
 }
  nav a:hover,
  nav a:focus{
     color:rgb(139, 133, 133);
 }
+.login{
+    color:rgb(40, 206, 62);
+    position:absolute;
+    margin-top:-300px;
+    margin-left:85%;
+    border:2px solid rgb(107, 230, 77);
+    border-radius:40%;
+  
+}
+.login ul li{
+    display: none;
+    border:2px solid rgb(48, 232, 245);
+    text-decoration: none;
+    border-radius: 50%;
+    background-color:rgb(182, 250, 182);
+}
+.login:hover ul li{
+    display:table;
+    text-transform: lowercase;
+    margin-left:-20%;
+    
+}
+.login ul li:hover{
+    background-color:rgb(61, 253, 125);
+}
+
+
 
 /*.footer styles*/
 .footer{
@@ -137,7 +169,7 @@ nav a{
  /*FEATURES*/
 
 .features{
-    
+
     background-color:rgb(185, 210, 241);
     color:gray;
     padding:20px;
@@ -145,16 +177,16 @@ nav a{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    
-   
-   
+
+
+
 }
 .features  figure {
    margin:auto;
    width:200px;
    height:300px;
    text-transform: uppercase;
-  
+
 }
 
  .features figure img {
@@ -162,15 +194,14 @@ nav a{
     box-shadow: gray 0 0 10px;
     width:200px;
    height:auto;
-   
+
 }
 .features figure img:hover{
     border-radius: 0%;
     height:200px;
-    width:200px;   
+    width:200px;
     position:absolute;
     size: 100%;
-   
 
 }
 /*about section*/
@@ -182,7 +213,7 @@ nav a{
     width:95%;
 }
 .container-about-textbox{
-    
+
     background-color:rgb(53, 52, 52);
     color:white;
     padding:3em;
@@ -200,21 +231,21 @@ nav a{
     left:50%;
     transform:translateX(-50%);
 
-   
-    
+
+
 }
 
 .share-holders{
     height:700px;
     background-color:rgb(196, 194, 194);
-    
-  
+
+
 }
 .share-holders h2{
     text-align:center;
     top:3em;
 
-  
+
 }
 .share-holders h1{
     text-align:center;
@@ -222,22 +253,22 @@ nav a{
     text-transform: uppercase;
     font-weight: 50;
 
-  
+
 }
 .button{
-    
+
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     color:green;
-  
+
 }
 .button:hover,
 .button:focus{
-    
+
     font-weight: 600;
     background-color: rgb(245, 241, 241);
-   
+
 }
 .button2{
     text-decoration: none;
@@ -258,13 +289,13 @@ nav a{
 .share-holders{
     height:auto;
     background-image:url("downloaded photos/shoes-2425122__480.jpg")
-  
+
 }
 .share-holders figure{
     display:inline-block;
     height:auto;
 }
- 
+
 .share-holders-figure figure img{
     color:rgb(0, 255, 128);
     border-radius:50%;
@@ -275,7 +306,7 @@ nav a{
 
 }
 
-  
+
 footer{
     background-color:black;
     padding:20px;
@@ -287,7 +318,7 @@ footer{
 @media screen and (max-width:864px){
     header .mobile{
         display:inline-block;
-      }  
+      }
       header .desktop{
           display:none;
       }
@@ -297,7 +328,7 @@ footer{
     header{
         height:300px;
     }
- 
+
  }
  @media screen and (min-width:807px){
 h1{
@@ -305,22 +336,23 @@ h1{
 }
 .container{
     background-image:url("IMG-20190514-WA0027.jpg");
+      background-attachment: fixed;
     background-position: center;
     background-size:100%;
    background-repeat: no-repeat;
     height: 400px;
 }
 .container-about{
-    
+
     margin:0 auto;
     width:95%;
-    
+
 }
 
 .container-about-textbox{
    width:40vw;
    margin-left:-2.5%;
-   
+
 }
 .container-about-textbox h1{
     color:rgb(85, 233, 85);
@@ -330,10 +362,10 @@ h1{
     background-color:rgb(53, 52, 52);
     left:25%;
     transform:translateX(-50%);
-    
+
 }
 }
- 
+
  .breaker{
      background-color:rgb(134, 131, 131);
      list-style-type: none;
@@ -344,12 +376,12 @@ h1{
     background-image:url("downloaded photos/online-shopping-2650383__480.jpg");
     background-color:rgb(201, 192, 192);
     height:605px;
-    list-style-type:none; 
-    
+    list-style-type:none;
+
     background-position:center;
     background-repeat:no-repeat;
     background-size:100%;
-    
+
 }
 .home-director h1{
     color:rgb(1, 29, 80);
@@ -358,9 +390,9 @@ h1{
     transform:translateX(-50%);
     top:20em;
     text-transform: uppercase;
-    
-    
-    
+
+
+
 }
 
 .button1 {
@@ -374,8 +406,8 @@ h1{
     transform:translateX(-50%);
     top:65em;
     text-transform: uppercase;
-    
-    
+
+
 }
 .button1:hover,
 .button1:focus{
@@ -387,13 +419,13 @@ h1{
         background-image:url("downloaded photos/online-shopping-2650383__480.jpg");
         background-color:rgb(49, 48, 48);
         height:600px;
-        list-style-type:none; 
+        list-style-type:none;
         background-position:center;
         background-repeat: no-repeat;
         background-size:100%;
-        
+
     }
-    
+
     .home-director h1{
         color:rgb(1, 29, 80);
         position:absolute;
@@ -402,9 +434,9 @@ h1{
         top:26em;
         text-transform: uppercase;
        font-weight: 100;
-      
+
     }
-    
+
     .button1 {
         background-color:rgb(120, 114, 134);
         color:rgb(247, 247, 19);
@@ -416,7 +448,7 @@ h1{
         transform:translateX(-50%);
         top:82em;
         text-transform: uppercase;
-        
+
     }
 }
 @media screen and (max-width:995px){
@@ -424,11 +456,11 @@ h1{
         background-image:url("downloaded photos/online-shopping-2650383__480.jpg");
         background-color:rgb(49, 48, 48);
         height:500px;
-        list-style-type:none; 
+        list-style-type:none;
         background-position:center;
         background-repeat: no-repeat;
         background-size:100%;
-        
+
     }
     .home-director h1{
         color:rgb(1, 29, 80);
@@ -438,9 +470,9 @@ h1{
         top:24em;
         text-transform: uppercase;
         font-weight: 100;
-      
+
     }
-    
+
     .button1 {
         background-color:rgb(120, 114, 134);
         color:rgb(247, 247, 19);
@@ -452,20 +484,20 @@ h1{
         transform:translateX(-50%);
         top:82em;
         text-transform: uppercase;
-        
+
     }
-    
+
 }
 @media screen and (max-width:807px){
     .home-director{
         background-image:url("downloaded photos/online-shopping-2650383__480.jpg");
         background-color:rgb(49, 48, 48);
         height:415px;
-        list-style-type:none; 
+        list-style-type:none;
         background-position:center;
         background-repeat: no-repeat;
         background-size:100%;
-        
+
     }
     .home-director h1{
         color:rgb(1, 29, 80);
@@ -475,9 +507,9 @@ h1{
         top:24em;
         text-transform: uppercase;
         font-weight: 600;
-      
+
     }
-    
+
     .button1 {
         background-color:rgb(120, 114, 134);
         color:rgb(247, 247, 19);
@@ -489,7 +521,7 @@ h1{
         transform:translateX(-50%);
         top:80em;
         text-transform: uppercase;
-        
+
     }
 }
 @media screen and (max-width:672px){
@@ -497,11 +529,11 @@ h1{
         background-image:url("downloaded photos/online-shopping-2650383__480.jpg");
         background-color:rgb(49, 48, 48);
         height:375px;
-        list-style-type:none; 
+        list-style-type:none;
         background-position:center;
         background-repeat: no-repeat;
         background-size:100%;
-        
+
     }
     .home-director h1{
         color:rgb(1, 29, 80);
@@ -511,10 +543,10 @@ h1{
         top:24em;
         text-transform: lowercase;
         font-weight: 500;
-        
-      
+
+
     }
-    
+
     .button1 {
         background-color:rgb(120, 114, 134);
         color:rgb(247, 247, 19);
@@ -526,20 +558,20 @@ h1{
         transform:translateX(-50%);
         top:80em;
         text-transform: uppercase;
-        
+
     }
-   
+
 }
 @media screen and (max-width:656px){
     .home-director{
         background-image:url("downloaded photos/online-shopping-2650383__480.jpg");
         background-color:rgb(49, 48, 48);
         height:375px;
-        list-style-type:none; 
+        list-style-type:none;
         background-position:center;
         background-repeat: no-repeat;
         background-size:100%;
-        
+
     }
     .home-director h1{
         color:rgb(1, 29, 80);
@@ -549,10 +581,10 @@ h1{
         top:31em;
         text-transform: lowercase;
         font-weight: 300;
-        
-      
+
+
     }
-    
+
     .button1 {
         background-color:rgb(120, 114, 134);
         color:rgb(247, 247, 19);
@@ -564,48 +596,68 @@ h1{
         transform:translateX(-50%);
         top:97em;
         text-transform: uppercase;
-        
+
     }
-   
+
 }
 /*market shoes styles*/
 .market-shoes{
+  background-image:url("downloaded photos/shoes-2425122__480.jpg");
+  background-attachment: fixed;
     background-color:white;
     color:gray;
     padding:20px;
     margin:auto;
     display:flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     
-    
-}
-.market-shoes figure{
-    color:gray;
-    margin:15px;
-    width:200px;
-    text-transform: uppercase;
 
 }
-.market-shoes figure img{
+
+.market-shoes figure {
    height:200px;
-    box-shadow: rgb(167, 165, 165) 0 0 10px;
+    
     width:200px;
- 
+    margin:auto;
+    height:300px;
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
 }
+
+
+ .market-shoes figure img {
+    border-radius:50%;
+    box-shadow: rgb(75, 228, 82) 0 0 10px;
+    width:200px;
+    height:200px;
+}
+.market-shoes figure img:hover{
+    border-radius: 0%;
+    height:200px;
+    width:200px;
+    position:absolute;
+    size: 100%;
+
+}
+
 
 
 
 
 /*shareholders responsive designs*/
 @media screen and (min-width:500px){
-  
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
-     
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -613,23 +665,23 @@ h1{
         width:175px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:39em;
-      
-        
-        
+
+
+
     }
 }
 @media screen and (min-width:650px){
-  
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
-     
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -637,31 +689,31 @@ h1{
         width:225px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:39em;
-      
-        
-        
+
+
+
     }
 }
 @media screen and (min-width:684px){
     .button2{
         top:38em;
-       
+
     }
 }
 
 
 @media screen and (min-width:720px){
-   
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
-     
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -669,24 +721,24 @@ h1{
         width:250px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
        .button2{
             top:38em;
-           
-            
-            
+
+
+
         }
-    
+
 }
 @media screen and (min-width:745px){
-  
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
-     
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -694,29 +746,29 @@ h1{
         width:275px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
        .button2{
             top:38em;
-           
-            
-            
+
+
+
         }
-    
+
 }
 @media screen and (min-width:795px){
 
     .button2{
         top:37em;
-       
-        
-        
+
+
+
     }
 }
 @media screen and (min-width:806px){
-    
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
@@ -727,17 +779,17 @@ h1{
         width:400px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:81em;
     }
 }
 @media screen and (min-width:986px){
-    
-    
+
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
@@ -748,17 +800,17 @@ h1{
         width:400px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
     }
 }
 @media screen and (min-width:1100px){
-    
-    
+
+
     .share-holders figure{
-        
+
         display:inline-block;
         height:auto;
     }
@@ -769,15 +821,15 @@ h1{
         width:450px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
     }
 }
 @media screen and (min-width:1200px){
-    
-    
+
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -785,15 +837,15 @@ h1{
         width:500px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
     }
 }
 @media screen and (min-width:1300px){
-    
-    
+
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -801,7 +853,7 @@ h1{
         width:550px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
@@ -809,7 +861,7 @@ h1{
 }
 
 @media screen and (min-width:1400px){
-    
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -817,7 +869,7 @@ h1{
         width:600px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
@@ -825,8 +877,8 @@ h1{
 }
 
 @media screen and (min-width:1500px){
-   
-    
+
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -834,15 +886,15 @@ h1{
         width:650px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
     }
 }
 @media screen and (min-width:1600px){
-   
-    
+
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -850,15 +902,15 @@ h1{
         width:700px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
     }
 }
 @media screen and (min-width:1700px){
-   
-    
+
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -866,15 +918,15 @@ h1{
         width:750px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
     }
 }
 @media screen and (min-width:1800px){
-   
-    
+
+
     .share-holders-figure figure img{
         color:rgb(0, 255, 128);
         border-radius:50%;
@@ -882,7 +934,7 @@ h1{
         width:800px;
         margin-left:50%;
         transform:translatex(-50%);
-      
+
     }
     .button2{
         top:49em;
@@ -895,7 +947,7 @@ h1{
     text-transform: uppercase;
 }
 .container-profile{
-  
+
     background-position: center;
     background-size:100%;
    background-repeat: no-repeat;
@@ -903,12 +955,13 @@ h1{
 }
 .container-profile-about{
     background-image:url("shirts-428627__480.jpg");
+    
     background-color: black;
     margin-left:.7%;
     width:49%;
     height:660px;
     outline-offset: -8px;
-    
+
 }
 
 .container-profile-about-textbox{
@@ -916,7 +969,7 @@ h1{
    top:39em;
    width:40vw;
    margin-left:1.5%;
-   
+
 }
 .container-profile-about-textbox h1{
     color:rgb(85, 233, 85);
@@ -925,7 +978,7 @@ h1{
     top:-6.5em;
     left:48%;
     transform:translateX(-50%);
-    
+
 }
 .container-profile-about-textbox figure img{
     position: absolute;
@@ -936,25 +989,25 @@ h1{
     width:200px;
     margin-left:48%;
     transform:translatex(-68%);
-  
+
 }
  /*profile settings for chairman*/
 h1{
     font-size:2.5rem;
     text-transform: uppercase;
-  
+
 }
 .container-profile2{
-    
+
     background-position: center;
     background-size:100%;
    background-repeat: no-repeat;
     height: 500px;
-  
+
 }
 .container-profile2-about{
     background-image:url("shirts-428627__480.jpg");
-    
+
     position: absolute;
     top:21.9em;
     background-color:black;
@@ -962,7 +1015,7 @@ h1{
     width:49%;
     height:660px;
     outline-offset: -8px;
-    
+
 }
 
 .container-profile2-about-textbox{
@@ -970,7 +1023,7 @@ h1{
    top:17.5em;
    width:40vw;
    margin-left:3.5%;
-   
+
 }
 .container-profile2-about-textbox h1{
     color:rgb(85, 233, 85);
@@ -979,7 +1032,7 @@ h1{
     top:.2em;
     left:55%;
     transform:translateX(-55%);
-    
+
 }
 .container-profile2-about-textbox figure img{
     position: absolute;
@@ -990,6 +1043,105 @@ h1{
     width:200px;
     margin-left:48%;
     transform:translatex(-65%);
+}
+/*login button responsive*/
+
+@media screen and (min-width:435px){
+    header{
+        height:400px;
+    }
+    header .mobile{
+        height:150px;
+    }
+    .login{
+        color:rgb(165, 201, 170);
+        border:2px solid rgb(107, 230, 77);
+        border-radius:40%;
+        position:absolute;
+        margin-top:-395px;
+        margin-left:50%;
+        transform:translateX(-50%);
+        border:none;
+        
+       
+    }
+
+    .login:hover ul li{
+        display: inline-block;
+        text-transform: lowercase;
+        margin:2px;
+        
+  
+}
+}
+@media screen and (min-width:858px){
+    header{
+        height:400px;
+    }
+    header .mobile{
+        height:100px;
+    }
+    nav a{
+        margin:3px;
+    }
+    .login{
+        color:rgb(165, 201, 170);
+        border:2px solid rgb(107, 230, 77);
+        border-radius:40%;
+        position:absolute;
+        margin-top:-350px;
+        margin-left:400px;
+        
+        border:none;
+        
+       
+    }
+    
+    .login:hover ul li{
+        display: inline-block;
+        text-transform: lowercase;
+        margin:2px;
+        
+    }
+
+
+
+}
+
+
+@media screen and (min-width:865px){
+
+    header{
+        height:400px;
+    }
+    header .mobile{
+        height:300px;
+    }
+    nav a{
+        margin:3px;
+    }
+    .login{
+        color:rgb(165, 201, 170);
+        border:2px solid rgb(107, 230, 77);
+        border-radius:40%;
+        position:absolute;
+        margin-top:-380px;
+        margin-left:46.5%;
+        transform:translateX(-60%);
+        border:none;
+        
+       
+    }
+    
+    .login:hover ul li{
+        display: inline-block;
+        text-transform: lowercase;
+        margin:2px;
+        
+    }
+
+
+
 }
 
 /*profile buttons*/
@@ -1011,10 +1163,10 @@ h1{
     color:rgb(243, 156, 156);
     top:-1em;
     margin-left:80%;
-    outline:2px solid rgb(243, 156, 156); 
+    outline:2px solid rgb(243, 156, 156);
     text-decoration: none;
     font-weight:1000;
-   
+
 }
 .button4:hover{
     background-color:rgb(170, 243, 192);

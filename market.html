@@ -1,12 +1,17 @@
+
+
+
+
 <!DOCTYPE html>
 <html>
 <head>
         <title>aggytrends_254 log</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 
 <body>
-   
+
     <header class="market-header">
         <nav>
         <ul>
@@ -15,512 +20,80 @@
             <li class="mobile"><a href="market.html"><h3>market</h3></a></li>
             <li class="mobile"><a href="profile.html"><h3>profile</h3></a></li>
             <li class="logo"><a href="index.html"><h3>aggytrends_254 log</h3></a></li>
-     
+
             <li class="desktop"><a href="market.html"><h3>market</h3></a></li>
             <li class="desktop"><a href="profile.html"><h3>profile</h3></a></li>
-               
+          
+
         </ul>
     </nav>
-    
+
     </header>
     <section class="breaker0">
-            <form>
-                    <input id = 'username'>
-                    <input id = 'password'>
-                  
-                    <button type = 'button' onclick = 'getInfo()' id='button-upload'>upload</button>
-                </form>
-                <div>
-                <input class='imageuploader' type="text" placeholder="drag image" />
-                
-            </div>
-    </section>
+          </section>
+
     <section class="market-shoes" >
-              
+        
+      <figure>
+        <?php
+            $connect = mysqli_connect("localhost","root","","aggytrends");
+              $query = "SELECT * FROM tbl_images ORDER BY id DESC";
+          $result = mysqli_query($connect, $query);
+          while ($row = mysqli_fetch_array($result)){
           
-                <figure>
-                    <img src="photos/IMG-20190507-WA0002.jpg" alt="">
-                <figcaption>Black heals</figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0003.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0004.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
+            echo '<img src="data:image/jpeg; base64, '.base64_encode($row['name']).'"/> '; 
             
-                <figure>
-                    <img src="photos/IMG-20190507-WA0005.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0006.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0007.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0008.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>   <img src="photos/IMG-20190507-WA0009.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-             
-                <figure>
-                    <img src="photos/IMG-20190507-WA0010.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0011.jpg" alt="">
-                <figcaption></figcaption>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0012.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0013.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0014.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0015.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                 
-                <figure>
-                    <img src="photos/IMG-20190507-WA0016.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0017.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0018.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-              
-                <figure>
-                    <img src="photos/IMG-20190507-WA0019.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0020.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0021.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0022.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-              
-                <figure>
-                    <img src="photos/IMG-20190507-WA0023.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0024.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0025.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0026.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure><img src="photos/IMG-20190507-WA0027.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0028.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>
-                    <img src="photos/IMG-20190507-WA0029.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>
-                    <img src="photos/IMG-20190507-WA0030.jpg" alt="">
-                <figcaption></figcaption>
-                <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-     
-                <figure>  <img src="photos/IMG-20190507-WA0032.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-              
-                <figure>  <img src="photos/IMG-20190507-WA0033.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0034.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0035.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0036.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0037.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0038.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0039.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0040.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0041.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0042.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0043.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0044.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0045.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0046.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0047.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0048.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0049.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0050.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                <figure>  <img src="photos/IMG-20190507-WA0051.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0052.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0053.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0054.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0055.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0056.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0057.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0058.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0059.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0060.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0061.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0062.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0063.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0064.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0065.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0066.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0067.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0068.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0069.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0070.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0071.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0072.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0073.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0074.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0075.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0076.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0077.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0078.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0079.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0080.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0081.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0082.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0083.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-               
-                <figure>  <img src="photos/IMG-20190507-WA0085.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0086.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0087.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0088.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0089.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0090.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0091.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0092.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0093.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0094.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0095.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0096.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0097.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-             
-                <figure>  <img src="photos/IMG-20190507-WA0099.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                <figure>  <img src="photos/IMG-20190507-WA0100.jpg" alt="">
-                    <figcaption></figcaption>
-                    <a href="https://chat.whatsapp.com/JD1K3APVJJXK26qeFWZrsY" class="button">Order</a>
-                </figure>
-                
-                         
-                
+             echo "<p>".$row['texts']."</p>";
+            
+         
+      }
+        ?>
+
+           
+       
+           
+
+
+
 
 
     </section>
     <section class="breaker"><li></li></section>
 
     <footer>email:aggytrends_254@gmail.com.BOX 2328.MERU
-            <p><strong>Top Time Fashions is a very unique wear house bla bla bla....</strong>
+      <p><strong><h1>aggytrends_254</h1>Fashion house gives you the best items you ever longed for all at
+      your desposal</strong>
 
-            </p>
+      </p>
             <ul class="footer">
                 <li><strong>share holders</strong></li>
-                <li>agather wakio</li>
-                <li>wilfred kinoti</li>
-               
+                <li>Agather Wakio</li>
+                <li>Wilfred Kinoti</li>
+
             </ul>
             <ul class="footer">
                     <li><strong>share holders</strong></li>
-                <li>agather wakio</li>
-                <li>wilfred kinoti</li>
-               
+                <li>Agather Wakio</li>
+                <li>Wilfred Kinoti</li>
+
             </ul>
             <ul class="footer">
                     <li><strong>share holders</strong></li>
-                <li>agather wakio</li>
-                <li>wilfred kinoti</li>
-               
+                <li>Agather Wakio</li>
+                <li>Wilfred Kinoti</li>
+
             </ul>
             <p>
                     <h1>CONTACT:0702767516/0704903968</h1>
                     <h1>LOCATION:Tawakal Shopping Center,opposite Kensilver bus station,MERU TOWN.</h1>
-                            
+
                 </p>
 
 
     </footer>
     <script src ='javascript.js'></script>
-    
-    
+
+
 </body>
+</html>
 </html>
